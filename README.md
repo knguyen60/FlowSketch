@@ -9,16 +9,26 @@ How to Start:
 
 2. Create your own branch (call it name-dev, such as mark-dev)
 
+*Note: These can be done in Android Studio*
+
 
 How to Work:
 
-1. Update project from master
+1. Pull to your remote branch (so your remote branch is updated)
 
-2. Commit to your branch a few times
+2. Pull from your remote Branch (so your local version updated)
 
-3. Merge (Pull Requests) with the master branch
+3. Commit to your branch a few times, try to stick to as few files as possible
 
-4. Repeat steps 1 - 4 until project is done
+4. Push to your Branch (remote)
+
+5. Put in a Pull Request (to merge your remote branch with the remote master branch)
+
+6. Go on to GitBub and approve your merge*
+
+7. Repeat steps 1 - 6 until project is done
+
+**Note: Cannot be done inside Andoid Studio*
 
 ### Links
 Google Drive with Docs and Notes: 
