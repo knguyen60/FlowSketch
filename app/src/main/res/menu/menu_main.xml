@@ -18,13 +18,13 @@
     <item
         android:id="@+id/line_action"
         android:orderInCategory="100"
-        android:title="Shape"
+        android:title="Line"
         app:showAsAction="always"/>
 
     <item
-        android:id="@+id/action_refresh"
+        android:id="@+id/load"
         android:orderInCategory="100"
-        android:title="Settings"
+        android:title="Load"
         app:showAsAction="never"/>
 
 </menu>
