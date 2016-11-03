@@ -7,7 +7,7 @@ How to Start:
 
 1. Clone Repo
 
-2. Create your own branch (call is name-dev, such as mark-dev)
+2. Create your own branch (call it name-dev, such as mark-dev)
 
 
 How to Work:
