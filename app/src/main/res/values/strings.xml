@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">FlowSketch</string>
+    <string name="app_name">flowsketch</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_load">LoadActivity</string>
+    <string name="action_settings">Settings</string>
 </resources>

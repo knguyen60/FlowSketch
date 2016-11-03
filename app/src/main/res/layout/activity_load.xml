@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/activity_main"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="cornjob.flowsketch.MainActivity">
+    tools:context="cornjob.flowsketch.LoadActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -23,10 +21,6 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <!--Fragment Layout in content_main.
-        Multiple fragments can be in this activity,
-        but it needs to be defined here-->
-    <include layout="@layout/content_main" />
-
+    <include layout="@layout/content_load" />
 
 </android.support.design.widget.CoordinatorLayout>
