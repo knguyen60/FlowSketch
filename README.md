@@ -17,17 +17,17 @@ How to Work:
 1. Pull to update your branch with latest master changes
 ![pulling](http://i.imgur.com/UUtaFSI.png "Logo Title Text 1")
 
-2. Commit to your branch a few times, try to stick to as few files as possible
+2. Commit to your branch a few times, try to mess with as few files as possible
 
 3. Push to your Branch (remote)
 
 4. Put in a Pull Request (to merge your remote branch with the remote master branch)
 
-5. Go on to GitBub and approve your merge*
+5. Go on to GitHub to approve your merge*
 
 6. Repeat steps 1 - 5 until project is done
 
-**Note: Cannot be done inside Andoid Studio*
+**Note: Cannot be done inside Android Studio*
 
 ### Links
 Google Drive with Docs and Notes: 
