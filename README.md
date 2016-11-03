@@ -5,9 +5,11 @@ COP 4331C Fall 2016
 ### Workflow Description
 How to Start:
 
-1. Clone Repo
+1. Update Android Studio to the newest version
 
-2. Create your own branch (call it name-dev, such as mark-dev)
+2. Clone Repo
+
+3. Create your own branch (call it name-dev, such as mark-dev)
 
 *Note: These can be done in Android Studio*
 
