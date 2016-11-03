@@ -7,7 +7,7 @@ How to Start:
 
 1. Update Android Studio to the newest version
 
-2. Clone Repo
+2. Create new project in Android Studio by cloning this repo
 
 3. Create your own branch (call it name-dev, such as mark-dev)
 
