@@ -11,6 +11,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 
 /**
@@ -41,7 +42,21 @@ public class canvasFragment extends Fragment {
 
         int id = item.getItemId();
 
-        if(id == R.id.load_canvas_action){
+        if(id == R.id.square_item){
+            Toast.makeText(getActivity(), "Square Clicked", Toast.LENGTH_SHORT).show();
+        }else if(id == R.id.cirle_item){
+            Toast.makeText(getActivity(), "Circle Clicked", Toast.LENGTH_SHORT).show();
+        }else if(id == R.id.triangle_item){
+            Toast.makeText(getActivity(), "Triangle Clicked", Toast.LENGTH_SHORT).show();
+        }else if(id == R.id.rectangle_item){
+            Toast.makeText(getActivity(), "Rectangle Clicked", Toast.LENGTH_SHORT).show();
+        }else if(id == R.id.diamond_item){
+            Toast.makeText(getActivity(), "Diamond Clicked", Toast.LENGTH_SHORT).show();
+        }else if(id == R.id.oval_item){
+            Toast.makeText(getActivity(), "Oval Clicked", Toast.LENGTH_SHORT).show();
+        }
+        //overflow options
+        else if(id == R.id.load_canvas_action){
             Intent intent = new Intent(getActivity(), LoadActivity.class);
             startActivity(intent);
         }
