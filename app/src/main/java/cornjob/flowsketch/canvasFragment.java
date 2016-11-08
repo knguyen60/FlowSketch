@@ -18,7 +18,7 @@ import android.view.ViewGroup;
  */
 public class canvasFragment extends Fragment {
 
-
+//test
     public canvasFragment() {
         // Required empty public constructor
     }
@@ -41,7 +41,7 @@ public class canvasFragment extends Fragment {
 
         int id = item.getItemId();
 
-        if(id == R.id.load){
+        if(id == R.id.load_canvas_action){
             Intent intent = new Intent(getActivity(), LoadActivity.class);
             startActivity(intent);
         }
