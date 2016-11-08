@@ -10,27 +10,86 @@
         app:showAsAction="always">
 
         <menu>
+
+            <!--Fill menu-->
             <item
                 android:id="@+id/fill_action"
                 android:title="Fill" >
 
-                <!--Fill menu-->
                 <menu>
 
                     <item
-                        android:id="@+id/red_action"
+                        android:id="@+id/red_fill"
                         android:title="Red" />
                     <item
-                        android:id="@+id/green_action"
+                        android:id="@+id/green_fill"
                         android:title="Green" />
+                    <item
+                        android:id="@+id/blue_fill"
+                        android:title="Blue" />
+                    <item
+                        android:id="@+id/yellow_fill"
+                        android:title="Yellow" />
+                    <item
+                        android:id="@+id/orange_fill"
+                        android:title="Orange" />
+                    <item
+                        android:id="@+id/pink_fill"
+                        android:title="Pink" />
+                    <item
+                        android:id="@+id/purple_fill"
+                        android:title="Purple" />
+                    <item
+                        android:id="@+id/white_fill"
+                        android:title="White" />
+                    <item
+                        android:id="@+id/black_fill"
+                        android:title="Black" />
+
+
                 </menu>
+
             </item>
 
 
             <!--Stroke menu-->
             <item
                 android:id="@+id/stroke_action"
-                android:title="Stroke" />
+                android:title="Stroke" >
+
+                <menu>
+
+                    <item
+                        android:id="@+id/red_stroke"
+                        android:title="Red" />
+                    <item
+                        android:id="@+id/green_stroke"
+                        android:title="Green" />
+                    <item
+                        android:id="@+id/blue_stroke"
+                        android:title="Blue" />
+                    <item
+                        android:id="@+id/yellow_stroke"
+                        android:title="Yellow" />
+                    <item
+                        android:id="@+id/orange_stroke"
+                        android:title="Orange" />
+                    <item
+                        android:id="@+id/pink_stroke"
+                        android:title="Pink" />
+                    <item
+                        android:id="@+id/purple_stroke"
+                        android:title="Purple" />
+                    <item
+                        android:id="@+id/white_stroke"
+                        android:title="White" />
+                    <item
+                        android:id="@+id/black_stroke"
+                        android:title="Black" />
+
+
+                </menu>
+            </item>
 
 
         </menu>
@@ -42,6 +101,27 @@
         android:icon="@drawable/shape_icon"
         app:showAsAction="always"
         android:title="Shape">
+
+        <menu>
+            <item
+                android:id="@+id/square_item"
+                android:title="Square"/>
+            <item
+                android:id="@+id/cirle_item"
+                android:title="Circle"/>
+            <item
+                android:id="@+id/triangle_item"
+                android:title="Triangle"/>
+            <item
+                android:id="@+id/rectangle_item"
+                android:title="Rectangle"/>
+            <item
+                android:id="@+id/diamond_item"
+                android:title="Diamond"/>
+            <item
+                android:id="@+id/oval_item"
+                android:title="Oval"/>
+        </menu>
 
     </item>
 
