@@ -18,7 +18,7 @@ import android.view.ViewGroup;
  */
 public class canvasFragment extends Fragment {
 
-
+//test
     public canvasFragment() {
         // Required empty public constructor
     }
