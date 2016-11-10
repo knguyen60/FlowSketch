@@ -132,11 +132,25 @@
         app:showAsAction="always"
         android:title="Lines">
 
+        <menu>
+            <item
+                android:id="@+id/line_item"
+                android:title="Line"/>
+            <item
+                android:id="@+id/line_dashed_item"
+                android:title="Dashed Line"/>
+            <item
+                android:id="@+id/line_more_dashed_item"
+                android:title="More Dashed Line"/>
+
+        </menu>
+
     </item>
 
 
     <!--Text-->
     <item
+        android:id="@+id/text_item"
         android:icon="@drawable/text_icon"
         app:showAsAction="always"
         android:title="Text">
