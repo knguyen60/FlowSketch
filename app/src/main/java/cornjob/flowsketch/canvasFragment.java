@@ -50,11 +50,11 @@ public class canvasFragment extends Fragment {
 
         int id = item.getItemId();
 
+        /** Go to login activity **/
         if(id == R.id.login_action)
         {
-            Toast.makeText(getActivity(), "LOGIN", Toast.LENGTH_SHORT).show();
-            MainActivity m = new MainActivity();
-            m.goToLoginActivity(getView());
+            Intent intent = new Intent(getActivity(), LoginActivity.class);
+            startActivity(intent);
         }
 
         if(id == R.id.square_item){

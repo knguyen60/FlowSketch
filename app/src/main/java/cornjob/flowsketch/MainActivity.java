@@ -52,10 +52,4 @@ public class MainActivity extends AppCompatActivity {
         });
         colorPickerDialog.show();
     }
-
-    public void goToLoginActivity (View view){
-        Intent intent = new Intent (this, LoginActivity.class);
-        startActivity(intent);
-    }
-
 }
