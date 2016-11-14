@@ -1,11 +1,13 @@
 package cornjob.flowsketch;
 
 import android.content.ClipData;
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
@@ -16,19 +18,19 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    FloatingActionButton fill;
+    FloatingActionButton colorAction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        fill = (FloatingActionButton) findViewById(R.id.fill_color);
+        colorAction = (FloatingActionButton) findViewById(R.id.color_action);
 
-        fill.setOnClickListener(new View.OnClickListener() {
+        colorAction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ColorPickerDialog();
+                    ColorPickerDialog();
             }
         });
 
@@ -45,10 +47,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onColorSelected(int color)
             {
-                fill.setBackgroundTintList(ColorStateList.valueOf(color));
+                colorAction.setBackgroundTintList(ColorStateList.valueOf(color));
             }
         });
         colorPickerDialog.show();
+    }
+
+    public void goToLoginActivity (View view){
+        Intent intent = new Intent (this, LoginActivity.class);
+        startActivity(intent);
     }
 
 }

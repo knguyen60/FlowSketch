@@ -2,19 +2,15 @@ package cornjob.flowsketch;
 
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 
@@ -23,7 +19,11 @@ import android.widget.Toast;
  */
 public class canvasFragment extends Fragment {
 
-//test
+    public boolean log_in_status = false; // Boolean whether user is logged in or not
+                                          // Options menu changes depending on this variable
+                                          // NOTE: Change this variable to 'true' when user
+                                          // logs in
+
     public canvasFragment() {
         // Required empty public constructor
     }
@@ -33,13 +33,14 @@ public class canvasFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
 
+
         setHasOptionsMenu(true);
     }
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
-        inflater.inflate(R.menu.menu_main, menu);
+        inflater.inflate(R.menu.menu_main_logged_out, menu);
     }
 
     @Override
@@ -48,6 +49,13 @@ public class canvasFragment extends Fragment {
 
 
         int id = item.getItemId();
+
+        if(id == R.id.login_action)
+        {
+            Toast.makeText(getActivity(), "LOGIN", Toast.LENGTH_SHORT).show();
+            MainActivity m = new MainActivity();
+            m.goToLoginActivity(getView());
+        }
 
         if(id == R.id.square_item){
             Toast.makeText(getActivity(), "Square Clicked", Toast.LENGTH_SHORT).show();

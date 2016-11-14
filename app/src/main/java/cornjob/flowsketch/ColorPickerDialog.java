@@ -30,7 +30,6 @@ public class ColorPickerDialog extends AlertDialog {
         setButton(BUTTON_NEGATIVE, context.getString(android.R.string.cancel), onClickListener);
 
         setView(relativeLayout);
-
     }
 
     private OnClickListener onClickListener = new OnClickListener() {

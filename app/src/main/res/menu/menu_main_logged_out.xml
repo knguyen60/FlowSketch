@@ -140,19 +140,4 @@
         app:showAsAction="never"
         android:title="Login"/>
 
-
-    <!--Save Canvas-->
-    <item
-        android:id="@+id/save_canvas_action"
-        app:showAsAction="never"
-        android:title="Save"/>
-
-
-    <!--Load-->
-    <item
-        android:id="@+id/load_canvas_action"
-        app:showAsAction="never"
-        android:title="Load"/>
-
-
 </menu>
