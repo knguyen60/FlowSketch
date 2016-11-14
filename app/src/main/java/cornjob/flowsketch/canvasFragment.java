@@ -55,7 +55,20 @@ public class canvasFragment extends Fragment {
         }else if(id == R.id.oval_item){
             Toast.makeText(getActivity(), "Oval Clicked", Toast.LENGTH_SHORT).show();
         }
-        //overflow options
+        //line options. Insert line int canvas should be here
+        else if(id == R.id.line_item){
+            Toast.makeText(getActivity(), "Insert Line", Toast.LENGTH_SHORT).show();
+        }
+        else if(id == R.id.line_dashed_item){
+            Toast.makeText(getActivity(), "Insert Line Dashed", Toast.LENGTH_SHORT).show();
+        }
+        else if(id == R.id.line_more_dashed_item){
+            Toast.makeText(getActivity(), "Insert Line more dashed", Toast.LENGTH_SHORT).show();
+        }
+        /*
+        New, Login, Save, and Load options
+        Intent to start activities should be here
+         */
         else if(id == R.id.load_canvas_action){
             Intent intent = new Intent(getActivity(), LoadActivity.class);
             startActivity(intent);
